@@ -1,0 +1,6 @@
+{
+  "name": "Career Boost Plug – BOOSTCON '26 Certificate Generator",
+  "description": "Generate and download your official Certificate of Attendance for Career Boost Plug BOOSTCON '26 – The 3rd Anniversary Conference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

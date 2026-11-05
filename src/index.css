@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-great-vibes: 'Great Vibes', cursive;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --color-brand-navy: #010545;
+  --color-brand-green: #00B050;
+  --color-brand-pink: #E91E63;
+  --color-brand-blue: #055DE3;
+}
+
+/* Custom smooth transitions and animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+  header, footer, #details, #faq, form, .no-print {
+    display: none !important;
+  }
+  #certificate-preview-section {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #certificate-preview-section img {
+    max-width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
